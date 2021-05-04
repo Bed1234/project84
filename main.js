@@ -46,6 +46,7 @@ function uploadcar2(){
     ctx.drawImage(car2_imgTag,car2_x,car2_y,car2_width,car2_height);
 }
 
+
 window.addEventListener("keydown",my_keydown);
 
 function my_keydown(e){
@@ -73,37 +74,29 @@ function my_keydown(e){
         console.log("Right");
     }
 
-}
-
-
-
-
-
-window.addEventListener("keydown",my_keydown);
-
-function my_keydown(e){
-    keyPressed=e.keyCode;
-    console.log(keyPressed);
-    if(keyPressed== '38'){
-        car2_up();
+    
+    if(keyPressed== '87'){
+        car1_up();
         console.log("Up");
     }
 
-    if(keyPressed== '40'){
-        car2_down();
+    
+    if(keyPressed== '83'){
+        car1_down();
         console.log("Down");
     }
 
-
-    if(keyPressed== '37'){
-        car2_Left();
+    
+    if(keyPressed== '65'){
+        car1_Left();
         console.log("Left");
     }
 
-
-    if(keyPressed== '39'){
-        car2_right();
+    
+    if(keyPressed== '68'){
+        car1_right();
         console.log("Right");
     }
 
 }
+
